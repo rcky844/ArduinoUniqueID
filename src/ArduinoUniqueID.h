@@ -24,8 +24,9 @@
   #include "pico/bootrom.h"
   }
 #elif defined(ARDUINO_ARCH_MEGAAVR)
+#elif defined(NRF51_SERIES) || defined(NRF52_SERIES) || defined(NRF53_SERIES)
 #else
-#error "ArduinoUniqueID only works on AVR, SAM, SAMD, STM32, Teensy, RP2040, megaAVR and ESP Architecture"
+#error "ArduinoUniqueID only works on AVR, SAM, SAMD, STM32, Teensy, RP2040, megaAVR, nRF5 and ESP Architecture"
 #endif
 
 #if defined(ARDUINO_ARCH_AVR)
@@ -65,6 +66,9 @@
 #elif defined(ARDUINO_ARCH_MEGAAVR)
 #define UniqueIDsize 10
 #define UniqueIDbuffer 10
+#elif defined(NRF51_SERIES) || defined(NRF52_SERIES) || defined(NRF53_SERIES)
+#define UniqueIDsize 8
+#define UniqueIDbuffer 8
 #endif
 
 #define UniqueID8 (_UniqueID.id + UniqueIDbuffer - 8)

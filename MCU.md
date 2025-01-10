@@ -114,3 +114,22 @@ Todo
 # Raspberry Pi Pico - RP2040
 
 Todo
+
+# Nordic Semiconductor nRF5 based boards
+
+Unique ID copies the `DEVICEID` information from a struct located at a specific memory location provided by the BSP ([NRF_FICR_Type](https://github.com/sandeepmistry/arduino-nRF5/blob/master/cores/nRF5/SDK/components/device/nrf52.h#L713)).
+
+| UniqueID8 | nRF5 |
+| :-------: | :------: |
+| Byte 0| Byte 0 |
+| Byte 1| Byte 1 |
+| Byte 2| Byte 2 |
+| Byte 3| Byte 3 |
+| Byte 4| Byte 0 |
+| Byte 5| Byte 1 |
+| Byte 6| Byte 2 |
+| Byte 7| Byte 3 |
+
+## Tested Microcontroller
+
+* Micro:bit

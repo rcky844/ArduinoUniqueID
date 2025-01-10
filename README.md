@@ -1,6 +1,6 @@
 # ArduinoUniqueID
 
-This Library gets the Unique ID / Manufacture Serial Number from the Atmel AVR, SAM, SAMD, STM32, and ESP Microcontroller.
+This Library gets the Unique ID / Manufacture Serial Number from the Atmel AVR, SAM, SAMD, STM32, ESP and nRF5 Microcontroller.
 
 [![Compile Sketch](https://github.com/ricaun/ArduinoUniqueID/actions/workflows/Compile-Sketch.yml/badge.svg)](https://github.com/ricaun/ArduinoUniqueID/actions)
 
@@ -16,6 +16,7 @@ ArduinoUniqueID supports the [Microcontrollers](MCU.md).
 * Espressif ESP
 * Teensy
 * Raspberry Pi Pico - RP2040
+* Nordic Semiconductor nRF5 based boards (e.g. Micro:bit)
 
 # Installation
 
